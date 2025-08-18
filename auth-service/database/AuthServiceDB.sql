@@ -1,4 +1,4 @@
-CREATE TABLE auth_users (
+CREATE TABLE AuthServiceDB (
                             id SERIAL PRIMARY KEY,
                             username TEXT UNIQUE NOT NULL,
                             password_hash TEXT NOT NULL,
@@ -7,5 +7,3 @@ CREATE TABLE auth_users (
                             email TEXT UNIQUE,
                             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
-
